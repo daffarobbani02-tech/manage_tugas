@@ -1,0 +1,91 @@
+{
+  "matkul": [
+    {
+      "kode": "ABC001",
+      "nama": "PBO",
+      "sks": 3
+    },
+    {
+      "kode": "ABC002",
+      "nama": "BASDAT",
+      "sks": 3
+    },
+    {
+      "kode": "ABC003",
+      "nama": "ADM",
+      "sks": 3
+    },
+    {
+      "kode": "ABC004",
+      "nama": "SO",
+      "sks": 3
+    },
+    {
+      "kode": "ABC005",
+      "nama": "DAA",
+      "sks": 3
+    },
+    {
+      "kode": "ABC006",
+      "nama": "ML",
+      "sks": 3
+    },
+    {
+      "kode": "ABC007",
+      "nama": "BINDO",
+      "sks": 2
+    },
+    {
+      "kode": "ABC008",
+      "nama": "Pancasila",
+      "sks": 2
+    }
+  ],
+  "tugas": [
+    {
+      "jenis": "TugasKelompok",
+      "kode": "TGS001",
+      "judul": "Penerapan GUI",
+      "deadline": "22-11-2026",
+      "estimasi_jam": 5,
+      "selesai": false,
+      "jumlah_anggota": 3
+    },
+    {
+      "jenis": "TugasKelompok",
+      "kode": "TGS002",
+      "judul": "Projek ADM",
+      "deadline": "25-11-2026",
+      "estimasi_jam": 6,
+      "selesai": false,
+      "jumlah_anggota": 3
+    },
+    {
+      "jenis": "TugasKelompok",
+      "kode": "TGS003",
+      "judul": "Progress DAA",
+      "deadline": "25-11-2026",
+      "estimasi_jam": 6,
+      "selesai": false,
+      "jumlah_anggota": 3
+    },
+    {
+      "jenis": "TugasKuliah",
+      "kode": "TGS004",
+      "judul": "Random Forest",
+      "deadline": "26-11-2026",
+      "estimasi_jam": 4,
+      "selesai": false,
+      "matkul_kode": "ABC006",
+      "bobot": 20
+    },
+    {
+      "jenis": "TugasPribadi",
+      "kode": "TGS005",
+      "judul": "belajar",
+      "deadline": "16-12-2026",
+      "estimasi_jam": 2,
+      "selesai": false
+    }
+  ]
+}
