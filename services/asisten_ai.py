@@ -23,7 +23,6 @@ class AsistenAI:
             raise ValueError("Objek layanan harus turunan dari LayananAI.")
         self._layanan = layanan
 
-    # ---------- helper internal ----------
     def _deskripsi_tugas(self, tugas: Tugas) -> str:
         """Ubah objek Tugas menjadi teks ringkas sebagai konteks untuk AI."""
         info = [
@@ -47,7 +46,6 @@ class AsistenAI:
             raise ValueError("Format JSON tidak ditemukan pada respons AI.")
         return json.loads(cocok.group(0))
 
-    # ---------- Fitur 1: Memandu Tugas ----------
     def pandu_tugas(self, tugas: Tugas, pertanyaan: str = "") -> str:
         """Menjelaskan ulang materi/konsep tugas dan memberi langkah pengerjaan."""
         if not isinstance(tugas, Tugas):
@@ -65,7 +63,6 @@ class AsistenAI:
         )
         return self._layanan.kirim_prompt(prompt)
 
-    # ---------- Fitur 2: Estimasi Selesainya Tugas ----------
     def estimasi_selesai(
         self,
         judul: str,
@@ -105,7 +102,6 @@ class AsistenAI:
                 alasan="Menggunakan estimasi cadangan karena AI sedang offline atau respons tidak valid.",
             )
 
-    # ---------- Fitur 3: Saran Cicilan Saat Minggu Padat ----------
     def saran_cicil_minggu_padat(
         self,
         daftar_minggu_kritis: list,
